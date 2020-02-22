@@ -36,7 +36,7 @@ struct toy_list *toy_find(char *name)
   // If the name starts with "toybox" accept that as a match.  Otherwise
   // skip the first entry, which is out of order.
 
-  if (!strncmp(name,"toybox",6)) return toy_list;
+  if (!strncmp(name,"libtoybox",6)) return toy_list;
   bottom = 1;
 
   // Binary search to find this command.
